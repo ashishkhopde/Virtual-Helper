@@ -1,0 +1,109 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.video-bg {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00ffe5, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ffe5; }
+  to { text-shadow: 0 0 20px #ff0080; }
+}
+
+.transcript {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  height: 6rem;
+  width: 20rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mic-btn, .stop-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.mic-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ffe5;
+}
+
+.stop-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff0044;
+}
+
+.stop-btn {
+  color: #ff0044;
+  box-shadow: 0 0 25px #ff0044, 0 0 40px #ff0044;
+}
+
+.mic-btn {
+  color: #00ffe5;
+  box-shadow: 0 0 25px #00ffe5, 0 0 40px #00ffe5;
+}
+
+.reset-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ffe5, #ff0080);
+  color: white;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.reset-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+

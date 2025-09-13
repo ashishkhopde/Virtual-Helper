@@ -1,0 +1,81 @@
+/* Help Button - top right corner */
+.help-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  z-index: 1500; /* make sure it stays above video */
+}
+
+.help-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00c3ff;
+}
+
+/* Help Overlay */
+.help-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* Help Box */
+.help-box {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.help-box h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #00ffe5;
+}
+
+.help-box ul {
+  text-align: left;
+  line-height: 1.6rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.help-box li {
+  margin: 0.3rem 0;
+}
+
+/* Close Button */
+.close-btn {
+  background: linear-gradient(90deg, #ff0044, #ff7b00);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  transition: 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
