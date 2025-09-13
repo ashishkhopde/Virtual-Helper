@@ -1,8 +1,8 @@
-# Virtual-Helper
+# Virtual Helper - "A virtual assistant that makes boring tasks easy and interesting with voice control."
 
 🔗 Virtual Helper - https://virtualhelper-va.netlify.app/ (Deployed on Netlify)
 
-🌐 Virtual Helper
+##🌐 Virtual Helper
 
 Virtual Helper is a smart, web-based personal assistant built with modern web technologies. It provides a simple and interactive interface where users can give voice or text commands to perform everyday tasks.
 
@@ -13,7 +13,7 @@ With its lightweight design and extensible architecture, you can easily add new 
 
 
 
-🚀 Features
+##🚀 Features
 
 Virtual Helper can understand and respond to different commands to make your tasks easier:
 
@@ -42,7 +42,7 @@ Virtual Helper can understand and respond to different commands to make your tas
 
 
 
-⚙️ Technologies Used
+##⚙️ Technologies Used
 
 React.js – UI library
 
@@ -55,7 +55,7 @@ JavaScript (ES6+) – Core logic
 
 
 
-🤝 Contributing
+##🤝 Contributing
 
 Contributions are welcome!
 
